@@ -1,2 +1,4 @@
 bases:
   - ../app
+patchesStrategicMerge:
+  - route.yaml
