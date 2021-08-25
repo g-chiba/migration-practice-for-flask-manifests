@@ -1,0 +1,8 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: sample-flask
+  labels:
+    app: sample-flask
+spec:
+  host: sample-flask-user2-staging.apps.cluster-b371.b371.sandbox1543.opentlc.com

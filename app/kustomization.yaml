@@ -3,11 +3,13 @@ resources:
   - job.yaml
 images:
   - name: my-app
-    newName: image-registry.openshift-image-registry.svc:5000/<ns>/<image name>
+    newName: image-registry.openshift-image-registry.svc:5000/user2-staging/isuumo
     newTag: latest
   - name: mysql
     newName: image-registry.openshift-image-registry.svc:5000/openshift/mysql
     newTag: 8.0-el8
   - name: job
-    newName: image-registry.openshift-image-registry.svc:5000/<ns>/<image name>
+    newName: image-registry.openshift-image-registry.svc:5000/user2-staging/isuumo
     newTag: latest
+crds:
+- ./crds/route.json
